@@ -27,7 +27,7 @@ def extract_dataset(train_df,feature_cols):
     train_df['dayofweek'] = train_df['datetime'].dt.weekday
     train_df['section'] = train_df['start_code'].astype(str)+'_'+train_df['end_code'].astype(str)
     train_df = train_df[feature_cols]
-    with open('../src/features/le_dict.pkl', 'rb') as web:
+    with open('features/le_dict.pkl', 'rb') as web:
         le = pickle.load(web)
     for c in cat_cols:
         train_df[c] = le[c].transform(train_df[c])

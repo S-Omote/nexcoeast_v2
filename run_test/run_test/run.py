@@ -34,8 +34,8 @@ def make_dataset(traffic, ic_master, search_spec, search_unspec):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--exec-path', help = '/path/to/submit/src')
-    parser.add_argument('--data-dir', help = '/path/to/train')
+    parser.add_argument('--exec-path', help = '/path/to/submit/src')    # predictor.pyの場所
+    parser.add_argument('--data-dir', help = 'train')
     parser.add_argument('--start-date', default = '2021-04-08', type = str, help='start date')
     parser.add_argument('--end-date', default = '2022-07-31', type = str, help='end date')
     args = parser.parse_args()
@@ -46,8 +46,8 @@ def parse_args():
 def main():
     # parse the arguments
     args = parse_args()
-    exec_path = os.path.abspath(args.exec_path)
-    data_dir = os.path.abspath(args.data_dir)
+    exec_path = os.path.abspath('C:/Users/brain/Desktop/nexcoeast_v2/v1/src')
+    data_dir = os.path.abspath('train')
     start_date = args.start_date
     end_date = args.end_date
     print('\nstart date: {}, end date:{}'.format(start_date, end_date))
