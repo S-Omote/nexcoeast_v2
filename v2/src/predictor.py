@@ -3,8 +3,9 @@ import numpy as np
 import datetime
 from sklearn.preprocessing import LabelEncoder
 import pickle
+import jpholiday
 
-cat_cols = ['road_code', 'start_code', 'end_code', 'section', 'direction', 'dayofweek']
+cat_cols = ['road_code', 'start_code', 'end_code', 'section', 'direction', 'dayofweek', 'is_holiday']
 num_cols = ['year', 'month', 'day', 'hour', 'search_1h', 'search_unspec_1d', 'KP', 'start_KP', 'end_KP', 'limit_speed',
                 'OCC', 'allCars', 'speed', 'start_pref_code', 'end_pref_code', 'start_lat', 'end_lat', 'start_lng', 'end_lng',
                 'start_degree', 'end_degree']
@@ -25,6 +26,9 @@ def expand_datetime(df):
 def extract_dataset(train_df,feature_cols):
     train_df0 = expand_datetime(train_df)
     train_df['dayofweek'] = train_df['datetime'].dt.weekday
+    train_df['date'] = train_df['datetime'].dt.date
+    # dateから、祝日か否か判定する。祝日なら1。
+    train_df['is_holiday'] = train_df['date'].map(jpholiday.is_holiday).astype(int)
     train_df['section'] = train_df['start_code'].astype(str)+'_'+train_df['end_code'].astype(str)
     train_df = train_df[feature_cols]
     with open('features/le_dict.pkl', 'rb') as web:
