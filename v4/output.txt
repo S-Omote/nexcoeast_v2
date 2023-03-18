@@ -1,0 +1,21 @@
+train shape: (910080, 36)
+[100]	valid_0's binary_logloss: 0.00200702	valid_0's f1: 0.954223
+ - fold1 - 0.9555
+[100]	valid_0's binary_logloss: 0.00164302	valid_0's f1: 0.966646
+[200]	valid_0's binary_logloss: 0.000817205	valid_0's f1: 0.970753
+ - fold2 - 0.9720
+[100]	valid_0's binary_logloss: 0.00192536	valid_0's f1: 0.955132
+[200]	valid_0's binary_logloss: 0.00108895	valid_0's f1: 0.959805
+[300]	valid_0's binary_logloss: 0.000983985	valid_0's f1: 0.961656
+[400]	valid_0's binary_logloss: 0.000968705	valid_0's f1: 0.961562
+ - fold3 - 0.9629
+[100]	valid_0's binary_logloss: 0.00155902	valid_0's f1: 0.975236
+ - fold4 - 0.9764
+[100]	valid_0's binary_logloss: 0.0020366	valid_0's f1: 0.949507
+[200]	valid_0's binary_logloss: 0.00122982	valid_0's f1: 0.955326
+[300]	valid_0's binary_logloss: 0.001133	valid_0's f1: 0.955224
+ - fold5 - 0.9558
+==================================================
+FINISH: CV Score: 0.9645
+
+
