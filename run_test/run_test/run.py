@@ -46,7 +46,7 @@ def parse_args():
 def main():
     # parse the arguments
     args = parse_args()
-    exec_path = os.path.abspath('C:/Users/brain/Desktop/nexcoeast_v2/v4 copy/src')
+    exec_path = os.path.abspath('C:/Users/brain/Desktop/nexcoeast_v2/v2 copy/src')
     data_dir = os.path.abspath('train')
     start_date = args.start_date
     end_date = args.end_date

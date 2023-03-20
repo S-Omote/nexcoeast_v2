@@ -1,0 +1,49 @@
+
+==================================================
+FINISH: CV Score: 0.9684
+
+############v4 copy######################
+
+train shape: (910080, 40)
+[100]	valid_0's binary_logloss: 0.00166914	valid_0's f1: 0.970159
+ - fold1 - 0.9702
+[100]	valid_0's binary_logloss: 0.00159484	valid_0's f1: 0.974359
+ - fold2 - 0.9750
+[100]	valid_0's binary_logloss: 0.00193023	valid_0's f1: 0.955077
+[200]	valid_0's binary_logloss: 0.00109293	valid_0's f1: 0.959171
+[300]	valid_0's binary_logloss: 0.000995462	valid_0's f1: 0.96039
+[400]	valid_0's binary_logloss: 0.000974524	valid_0's f1: 0.961656
+ - fold3 - 0.9630
+[100]	valid_0's binary_logloss: 0.00156005	valid_0's f1: 0.97584
+ - fold4 - 0.9776
+[100]	valid_0's binary_logloss: 0.00205016	valid_0's f1: 0.951389
+[200]	valid_0's binary_logloss: 0.00122802	valid_0's f1: 0.954728
+[300]	valid_0's binary_logloss: 0.00111266	valid_0's f1: 0.955671
+ - fold5 - 0.9581
+==================================================
+FINISH: CV Score: 0.9686
+
+#################v5 copy######################
+
+train shape: (910080, 41)
+[100]	valid_0's binary_logloss: 0.00145895	valid_0's f1: 0.978887
+[200]	valid_0's binary_logloss: 0.000645975	valid_0's f1: 0.979592
+ - fold1 - 0.9802
+[100]	valid_0's binary_logloss: 0.00161754	valid_0's f1: 0.974457
+ - fold2 - 0.9757
+[100]	valid_0's binary_logloss: 0.00162323	valid_0's f1: 0.97157
+[200]	valid_0's binary_logloss: 0.000748856	valid_0's f1: 0.973636
+ - fold3 - 0.9754
+[100]	valid_0's binary_logloss: 0.00143569	valid_0's f1: 0.982206
+[200]	valid_0's binary_logloss: 0.000614205	valid_0's f1: 0.984597
+ - fold4 - 0.9852
+[100]	valid_0's binary_logloss: 0.00165449	valid_0's f1: 0.969697
+[200]	valid_0's binary_logloss: 0.000744656	valid_0's f1: 0.975101
+[300]	valid_0's binary_logloss: 0.000607198	valid_0's f1: 0.976287
+[400]	valid_0's binary_logloss: 0.000535171	valid_0's f1: 0.979143
+ - fold5 - 0.9797
+==================================================
+FINISH: CV Score: 0.9793
+==================
+f1_score: 0.4314
+==================
